@@ -1,0 +1,12 @@
+version: '3' # Or a supported Compose file version
+
+services:
+  my-pytorch-project:
+    build: . # Assuming the Dockerfile is in the same directory
+    runtime: nvidia # Enable NVIDIA container runtime
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all # Make all GPUs visible inside the container
+    ports:
+      - "22:22" # Expose SSH 
+    volumes:
+      - ./:/workspace # Mount your code for development
