@@ -1,0 +1,9 @@
+.base
+.venv
+
+datasets/
+
+work_dirs/
+
+*.json
+*.log
