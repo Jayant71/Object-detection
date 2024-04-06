@@ -7,7 +7,7 @@ COPY . /workspace
 WORKDIR /workspace
 
 # Install dependencies
-RUN apt update -yy && apt install -yy libsndfile1 git
+RUN apt update -yy && apt install -yy libsndfile1 git ffmpeg libsm6 libxext6 
 RUN pip install -r mmdetection/requirements.txt
 RUN pip install -r mmyolo/requirements.txt
 # RUN pip install -q torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu118

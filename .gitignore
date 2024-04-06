@@ -1,7 +1,7 @@
 .base
 .venv
 
-datasets/
+dataset/
 
 work_dirs/
 
